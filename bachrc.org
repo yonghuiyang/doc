@@ -1,0 +1,16 @@
+#+TITLE: Linux 环境变量设置
+#+OPTIONS: ^:nil
+* 简介
+在linux中共有四个文件用来进行环境变量的设置：/etc/profile,/etc/bachrc,~/.bash_profile,~/.bashrc
+
+* /etc/profile
+全局配置，所有用户共享，当用户第一次登陆时，配置生效。若修改后想立即生效，则重新加载：source /etc/profile 或 . /etc/profile
+
+* /etc/bashrc
+全局配置，所有用户共享，用户新开一个shell时，配置会重新加载，修改会生效
+
+* ~/.bash_profile
+用户级配置，用户登陆时会重新加载配置。若修改后想立即生效，则重新加载：source ~/.bash_profile 或 . ~/.bash_profile
+    
+* ~/.bashrc    
+用户级配置，当用户新开一个shell时，配置重新加载，修改会生效
