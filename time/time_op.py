@@ -47,7 +47,7 @@ def TimeDeltaOP():
     now = date.today() #2015-06-25
     td = timedelta(days=1)
     tomorrow = now - td 
-    print tomorrow  #2015-06-25
+    print tomorrow  #2015-06-24
 
 if __name__=='__main__':
     TimeDeltaOP()
